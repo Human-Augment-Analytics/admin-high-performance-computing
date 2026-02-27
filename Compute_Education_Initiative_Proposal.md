@@ -25,7 +25,7 @@ PhD students, postdocs, and faculty who have working research code but no backgr
 
 ## Deliverable
 
-A single written guide (~25,000+ words) that serves as both a learning resource and an ongoing reference. Researchers can read it end-to-end when getting started, then return to specific sections as needed.
+A single written guide that serves as both a learning resource and an ongoing reference. Researchers can read it end-to-end when getting started, then return to specific sections as needed.
 
 ## Timeline
 
