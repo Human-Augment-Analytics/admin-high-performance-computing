@@ -1,7 +1,10 @@
 # PACE Job Submission Validator
-### Zachary Wallace
+** Zachary Wallace | Georgia Tech | Spring 2026**
+
+---
 This is an initiative for the CS 8803 Leadership in CS course Spring 2026
 
+## What I'm Developing
 A Python command line tool that checks Slurm job scripts for common mistakes before they are submitted to PACE. Researchers run the validator against their script and get back a plain language summary of what needs to be fixed. Main targets: new HAAG researchers, returning students, and project leads reviewing scripts written by their team.
 
 ## Who This Is For:
