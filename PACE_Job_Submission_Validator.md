@@ -1,5 +1,5 @@
 # PACE Job Submission Validator
-** Zachary Wallace | Georgia Tech | Spring 2026**
+**Zachary Wallace | Georgia Tech | Spring 2026**
 
 ---
 This is an initiative for the CS 8803 Leadership in CS course Spring 2026
