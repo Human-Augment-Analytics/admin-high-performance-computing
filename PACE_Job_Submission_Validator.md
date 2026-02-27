@@ -21,10 +21,5 @@ A Python command line tool that checks Slurm job scripts for common mistakes bef
 - The validator returns a list of warnings and errors with explanations
 - Fix the issues, rerun the validator, and submit once the script is clean
 
-## Useful Resources:
-PACE official website: https://pace.gatech.edu/ice-cluster/
-PACE onboarding videos: https://mediaspace.gatech.edu/channel/PACE/283315292
-Intro to PACE ICE guide: https://github.com/guru-desh/Intro-To-PACE-ICE?tab=readme-ov-file
-
 ## Deliverable:
 An open source Python tool on this repository with full documentation, usage instructions, and example scripts that demonstrate the types of mistakes the validator is designed to catch.
