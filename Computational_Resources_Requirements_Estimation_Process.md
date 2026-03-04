@@ -7,7 +7,8 @@ This project will develop a repeatable process to estimate HPC resource needs fo
 
 ---
 
-##Status: A survey already exists and will likely need modification based on stakeholder feedback.
+## Status
+A survey already exists and will likely need modification based on stakeholder feedback.
 [HAAG HPC Resource Estimation Survey](https://docs.google.com/forms/d/e/1FAIpQLScCP9jBCoPDoxk9EOnmLNihqRugzIvQNotvQCJ02VUwvMZkxw/viewform)
 
 ---
