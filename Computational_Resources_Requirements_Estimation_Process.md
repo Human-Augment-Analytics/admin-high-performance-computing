@@ -1,6 +1,6 @@
 # HAAG Project: High Performance Computing Resource Estimation  
 ### by Neelima Pandey  
-CS6609 — Spring 2026  
+CS6999 — Spring 2026  
 
 ## Overview  
 This project will develop a repeatable process to estimate HPC resource needs for research teams **using a survey-based workflow**. The goal is to reduce guesswork in requests (e.g., cores, memory, GPU type/count, storage, walltime) and to produce a clear **resource estimate + rationale** that can be used for internal planning and for HPC allocation applications.
