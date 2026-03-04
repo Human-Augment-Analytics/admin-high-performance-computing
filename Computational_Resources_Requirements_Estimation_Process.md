@@ -1,12 +1,14 @@
-# HAAG Project: High Performance Computing Resource Estimation  
+# High Performance Computing Resource Estimation  
 ### by Neelima Pandey  
 CS6999 — Spring 2026  
 
 ## Overview  
 This project will develop a repeatable process to estimate HPC resource needs for research teams **using a survey-based workflow**. The goal is to reduce guesswork in requests (e.g., cores, memory, GPU type/count, storage, walltime) and to produce a clear **resource estimate + rationale** that can be used for internal planning and for HPC allocation applications.
 
-> Status: A survey already exists and will likely need modification based on stakeholder feedback.
-> [HAAG HPC Resource Estimation Survey](https://docs.google.com/forms/d/e/1FAIpQLScCP9jBCoPDoxk9EOnmLNihqRugzIvQNotvQCJ02VUwvMZkxw/viewform)
+---
+
+##Status: A survey already exists and will likely need modification based on stakeholder feedback.
+[HAAG HPC Resource Estimation Survey](https://docs.google.com/forms/d/e/1FAIpQLScCP9jBCoPDoxk9EOnmLNihqRugzIvQNotvQCJ02VUwvMZkxw/viewform)
 
 ---
 
@@ -22,7 +24,7 @@ This project addresses:
 
 ## Objectives  
 1. **Survey refinement:** Validate and improve the existing survey so it captures the minimum necessary information for estimation.  
-2. **Estimation framework:** Define rules / heuristics to convert responses into estimates (CPU, memory, GPU, storage, runtime, queue choice).  
+2. **Estimation framework:** Define process to convert survey responses into estimates (CPU, memory, GPU, storage, runtime, queue choice).  
 3. **Output template:** Create a standardized “Resource Estimation Summary” that teams can attach to proposals or internal requests.  
 4. **Usability:** Ensure the process is understandable by non-HPC experts and consistent across projects.  
 
@@ -42,9 +44,7 @@ The survey should capture:
 - **User maturity:** beginner vs advanced HPC user (to inform support needs)
 
 ### 2) Estimation Logic  
-Convert survey responses into an estimate using:  
-- **Rule-based heuristics** (initial version)  
-- Optional later extension: **calibration with historical job data** (if available)  
+Define process to estimate resource usage based on the survey responses
 
 Example outputs:  
 - CPU cores per job + number of jobs  
@@ -75,4 +75,6 @@ A short report (Markdown template) that includes:
 - `survey/`  
   - Updated survey questions (Markdown + optional form export)  
 - `framework/`  
-  - Resource estimation rubric (rules/heuristics)  
+  - Resource estimation rubric (rules/heuristics)
+- `document format/`
+  - Standardized “Resource Estimation Summary” format
