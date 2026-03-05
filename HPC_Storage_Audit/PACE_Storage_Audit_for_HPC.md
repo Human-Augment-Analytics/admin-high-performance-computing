@@ -1,5 +1,7 @@
 # PACE Storage Audit for HPC
 
+By Wai Lung Justin Yiu | Georgia Tech | HAAG Admin | OMSCS | CS 6999 Spring 2026
+
 Storage plays an important role in HPC environments, as many HAAG projects work with massive datasets for deep learning and Generative AI model training and fine-tuning. However, if there is no auditing or housekeeping of the storage, the storage may exceed its capacity quickly. Moreover, since the storage is shared across projects, a storage issue caused by one particular project could affect other projects using the same HAAG storage.
 
 Therefore, it is necessary to establish a comprehensive auditing process for the HPC storage used by HAAG projects.
