@@ -49,7 +49,7 @@ Additional audits may be conducted if storage utilization approaches critical ca
 
 ---
 
-## 4. Way Forward
+## 4. Ongoing Work
 
 At present, there is no immediate need to perform backup or data cleanup, as more than **470 GB of storage capacity remains available**.
 
