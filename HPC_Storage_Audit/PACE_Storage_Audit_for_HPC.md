@@ -38,7 +38,7 @@ Filesystem                                 Size  Used Avail Use% Mounted on
 ...
 1.1T   2025-12-13 23:13:17   /storage/ice-shared/cs8903onl/vector_quantization
 261G   2026-03-03 06:58:51   /storage/ice-shared/cs8903onl/vectordb-retrieval
-
+```
 ---
 
 ## 3. Frequency of Audit
