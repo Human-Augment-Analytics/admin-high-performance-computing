@@ -1,0 +1,36 @@
+=== Storage Report for: /storage/ice-shared/cs8903onl ===
+Generated at: 2026-03-05 11:46:52 EST
+
+[1] Filesystem capacity and current usage
+Filesystem                                 Size  Used Avail Use% Mounted on
+172.27.71.101:/pace-iceshared-0/cs8903onl  4.0T  3.6T  478G  89% /storage/ice-shared/cs8903onl
+
+[2] Top-level folders (size + last modified)
+0	2025-08-13 16:01:08	/storage/ice-shared/cs8903onl/.Trash-3208811
+0	2025-10-17 18:50:13	/storage/ice-shared/cs8903onl/.Trash-3398409
+0	2026-02-18 08:51:39	/storage/ice-shared/cs8903onl/.Trash-803386
+1.5K	2025-09-26 14:52:50	/storage/ice-shared/cs8903onl/.idea
+460M	2025-11-16 10:48:44	/storage/ice-shared/cs8903onl/Charleston_Train
+0	2025-06-09 18:48:16	/storage/ice-shared/cs8903onl/Datasets
+139G	2026-02-13 08:04:17	/storage/ice-shared/cs8903onl/LiDAR
+417G	2026-03-03 10:36:27	/storage/ice-shared/cs8903onl/Mcquire-animal-detection
+3.4G	2024-10-11 16:27:13	/storage/ice-shared/cs8903onl/RW_Lizard_DLC
+508G	2025-07-25 14:45:28	/storage/ice-shared/cs8903onl/bird_audio
+1.2G	2025-12-13 23:10:48	/storage/ice-shared/cs8903onl/datasets
+0	2025-10-09 21:25:16	/storage/ice-shared/cs8903onl/eiamarino
+20G	2026-02-22 00:04:32	/storage/ice-shared/cs8903onl/hourglass-data
+54G	2026-02-26 20:32:16	/storage/ice-shared/cs8903onl/jzhuang48
+155G	2026-02-05 14:31:56	/storage/ice-shared/cs8903onl/kernel-datasets
+14G	2026-03-01 13:57:15	/storage/ice-shared/cs8903onl/lizard-classification
+316G	2026-03-01 07:12:41	/storage/ice-shared/cs8903onl/lw-batch-selection
+3.3G	2025-09-03 20:53:02	/storage/ice-shared/cs8903onl/miami_fall_24_jpgs
+67M	2026-01-23 12:31:22	/storage/ice-shared/cs8903onl/miami_fall_24_upper_dataset_roboflow
+22G	2026-01-27 03:08:17	/storage/ice-shared/cs8903onl/mussmann-inaturalist
+2.5G	2026-02-20 09:03:35	/storage/ice-shared/cs8903onl/mussmann-pfas
+0	2026-02-02 23:06:25	/storage/ice-shared/cs8903onl/odobon3
+76G	2026-02-16 01:55:03	/storage/ice-shared/cs8903onl/shared
+474G	2025-10-15 09:26:40	/storage/ice-shared/cs8903onl/single_nuc_1
+3.2G	2025-09-12 08:53:46	/storage/ice-shared/cs8903onl/syang693
+1.3M	2025-11-05 19:29:42	/storage/ice-shared/cs8903onl/tps_files
+1.1T	2025-12-13 23:13:17	/storage/ice-shared/cs8903onl/vector_quantization
+261G	2026-03-03 06:58:51	/storage/ice-shared/cs8903onl/vectordb-retrieval
