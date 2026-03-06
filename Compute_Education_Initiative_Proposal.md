@@ -1,6 +1,6 @@
 # Cloud & HPC Compute Education Initiative
 
-**Syed Ahsan Subzwari | Georgia Tech | Spring 2026**
+**Ahsan Subzwari | Georgia Tech | Spring 2026**
 
 ---
 
