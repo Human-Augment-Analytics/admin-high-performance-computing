@@ -1,128 +1,270 @@
 
-# PACE ICE Volunteer Access Process  
+# PACE ICE Volunteer Access Standard Operating Procedure (SOP)
+
 **Abhinav Vemuri | Georgia Tech | Spring 2026**
 
----
+This repository documents the **standard process for requesting and maintaining volunteer access to the PACE ICE cluster** for HAAG researchers.
 
-This is an initiative for the **CS 8803 Leadership in CS course – Spring 2026**.
-
----
-
-# What I'm Developing
-
-A documented process that explains **how HAAG volunteer researchers can request and maintain access to the PACE ICE cluster** outside of standard course enrollment.
-
-PACE ICE access is normally granted automatically to students enrolled in courses that use the cluster. However, **volunteers, graduating students, and external collaborators must request access through a separate administrative process**, which is currently undocumented.
-
-This initiative aims to **create a clear, repeatable workflow** that volunteers and project leads can follow to request access each semester without confusion.
+The goal of this document is to **eliminate confusion around the volunteer access process** and ensure that graduating researchers, volunteers, and external collaborators can maintain uninterrupted access to HAAG’s primary computing environment.
 
 ---
 
-# Who This Is For
+# Table of Contents
 
-1) **Volunteer researchers** who are continuing work with HAAG after graduating or outside of course enrollment and need continued access to PACE ICE.
-
-2) **Project leads and Comp Advisors** who supervise volunteers and need to submit or approve access requests.
-
-3) **Returning contributors** who previously had access but lost it during semester transitions and need to restore their account.
-
----
-
-# Problem This Solves
-
-PACE ICE access is **semester-based**, and access is automatically removed between semesters. Volunteers must request access manually each semester, but the process is **not formally documented**.
-
-This leads to:
-
-- Temporary loss of computing access
-- Delays in project progress
-- Confusion about who submits the request
-- Inconsistent communication with administrators
-
-By documenting the workflow, HAAG researchers will have a **standardized method for restoring volunteer access quickly**.
+1. Overview  
+2. Background  
+3. Scope of This SOP  
+4. Eligibility for Volunteer Access  
+5. Required Information for Requests  
+6. Volunteer Access Request Workflow  
+7. Access Request Lifecycle Diagram  
+8. System Architecture Context  
+9. Example Access Request Template  
+10. Semester Renewal Process  
+11. Common Issues and Troubleshooting  
+12. Related Resources  
+13. Future Improvements  
+14. Maintainers  
 
 ---
 
-# Volunteer Access Workflow
+# Overview
 
-The documented process will outline the steps required to obtain volunteer access to PACE ICE.
+The **PACE ICE (Instructional Cluster)** at Georgia Tech is HAAG’s primary computing environment for GPU and CPU workloads.
 
-### Step 1 — Identify Eligibility
+Access to PACE ICE is normally granted automatically to students enrolled in courses that use the cluster. However, **researchers who graduate or transition to volunteer roles lose their automatic access and must request it through a separate administrative process.**
 
-Volunteer access is typically required for:
-
-- Graduated HAAG members continuing research
-- Non-enrolled contributors assisting on projects
-- External collaborators working with HAAG teams
+This document defines the **standard operating procedure (SOP)** for requesting and maintaining volunteer access to PACE ICE.
 
 ---
 
-### Step 2 — Gather Required Information
+# Background
 
-The access request typically requires:
+HAAG uses the **PACE ICE cluster** because it provides:
 
-- Georgia Tech account (GTID)
-- Project or research group affiliation
-- Name of supervising faculty or project lead
-- Confirmation that access is required for research work
+- Free GPU and CPU resources
+- Shared computing infrastructure
+- Centralized cluster management
+- Integration with Georgia Tech systems
 
----
+However, because PACE ICE is an **instructional resource**, access is tied to course enrollment and resets between semesters.
 
-### Step 3 — Submit the Access Request
+This means:
 
-The request must be submitted through the **PACE support system**.
+- Graduating students lose cluster access
+- Volunteer researchers must request access manually
+- Requests must be repeated each semester
 
-This may involve:
+Historically this workflow existed informally but **was not documented**, which created delays and confusion.
 
-- A support ticket submission
-- Administrative approval from the research supervisor
-- Confirmation from the PACE team
-
----
-
-### Step 4 — Approval and Account Activation
-
-After submission:
-
-- PACE administrators review the request
-- Access is granted to the **PACE ICE instructional cluster**
-- The user receives confirmation once access is activated
+This SOP formalizes the process.
 
 ---
 
-### Step 5 — Repeat Each Semester
+# Scope of This SOP
 
-Because access is **semester-based**, volunteer access must be **renewed each term**.
+This SOP standardizes the **PACE ICE volunteer access process for HAAG researchers.**
 
-The documentation will clarify:
+Covered:
 
-- When renewal should occur
-- Who is responsible for initiating the request
-- How to avoid gaps in access
+- Volunteer access requests
+- Semester access renewal
+- Required information for requests
+- Troubleshooting common issues
 
----
+Not Covered:
 
-# Deliverable
-
-A **fully documented volunteer access guide** that includes:
-
-- Step-by-step instructions for submitting access requests  
-- Required information and approvals  
-- Example request templates  
-- Troubleshooting guidance for delayed approvals  
-
-The documentation will allow HAAG volunteers to **restore cluster access quickly and consistently each semester**.
+- Slurm job submission
+- Storage allocation management
+- PACE training and onboarding
+- External HPC resources (ACCESS / NAIRR)
 
 ---
 
-# Why This Matters
+# Eligibility for Volunteer Access
 
-PACE ICE is HAAG’s **primary computing environment for GPU and CPU workloads**, providing shared access to computational resources used across projects.
+Volunteer access may be required for:
 
-Ensuring volunteers can maintain access is critical for:
+### Graduating Researchers
+Students who previously had course-based PACE access but continue contributing to HAAG projects.
 
-- Research continuity
-- Collaboration across semesters
-- Supporting graduating members who continue contributing to projects
+### Volunteer Contributors
+Researchers contributing outside of course enrollment.
 
-This initiative helps **close one of the undocumented operational gaps in HAAG’s HPC infrastructure processes**.
+### External Collaborators
+Comp Advisors or collaborators assisting HAAG projects.
+
+---
+
+# Required Information for Requests
+
+Access requests must include the following information:
+
+| Field | Description |
+|------|-------------|
+| Full Name | Volunteer researcher |
+| GTID | Georgia Tech user ID |
+| Email | Georgia Tech email |
+| Project | HAAG research project |
+| Supervisor | Faculty advisor or project lead |
+| Role | Volunteer / collaborator |
+| Access Justification | Reason access is required |
+
+Incomplete requests may delay approval.
+
+---
+
+# Volunteer Access Request Workflow
+
+## Step 1 — Identify Volunteers
+
+Before each semester begins, project leads identify volunteers who require access.
+
+## Step 2 — Collect Required Information
+
+Compile required information for all volunteers.
+
+## Step 3 — Submit Access Request
+
+Submit a **PACE support ticket** requesting access.
+
+## Step 4 — Administrator Review
+
+PACE administrators review the request and approve access.
+
+## Step 5 — Verification
+
+Volunteers verify that they can:
+
+- Log into the cluster
+- Access required partitions
+- Submit jobs successfully
+
+---
+
+# Access Request Lifecycle Diagram
+
+```mermaid
+flowchart TD
+A[Identify Volunteers] --> B[Collect Required Information]
+B --> C[Submit PACE Support Ticket]
+C --> D[PACE Administrator Review]
+D --> E[Access Approved]
+E --> F[Volunteer Login Verification]
+F --> G[Cluster Usage]
+G --> H[Semester Ends]
+H --> I[Access Reset]
+I --> A
+```
+
+This diagram illustrates the **recurring semester lifecycle of volunteer access**.
+
+---
+
+# System Architecture Context
+
+```mermaid
+flowchart LR
+User[Volunteer Researcher] --> Login[GT Login]
+Login --> PACE[PACE ICE Cluster]
+PACE --> GPU[GPU Compute Nodes]
+PACE --> CPU[CPU Compute Nodes]
+PACE --> Storage[Shared Storage]
+Admin[PACE Admin Team] --> PACE
+```
+
+This shows where volunteer access fits within the broader **PACE ICE infrastructure environment**.
+
+---
+
+# Example Access Request Template
+
+Subject: Request for PACE ICE Volunteer Access
+
+Hello PACE Team,
+
+I am requesting volunteer access to the PACE ICE cluster for the following HAAG researchers.
+
+Name:  
+GTID:  
+Email:  
+Project:  
+Supervisor:
+
+These individuals are continuing research work with HAAG and require access to the instructional cluster.
+
+Please let me know if additional information is required.
+
+Thank you.
+
+---
+
+# Semester Renewal Process
+
+Because ICE is tied to instructional enrollment:
+
+1. Access may be removed between semesters.
+2. Project leads should review volunteer access before each semester begins.
+3. Submit renewal requests early to avoid downtime.
+4. Volunteers should verify access after approval.
+
+---
+
+# Common Issues and Troubleshooting
+
+### Access Removed After Semester Change
+
+Cause: ICE enrollment reset.
+
+Solution: Submit volunteer access request.
+
+---
+
+### Unable to Login
+
+Cause: Account permissions pending.
+
+Solution: Wait for confirmation or contact PACE.
+
+---
+
+### Job Submission Errors
+
+Cause: Missing partition permissions.
+
+Solution: Verify cluster access groups.
+
+---
+
+# Related Resources
+
+PACE Website  
+https://pace.gatech.edu/
+
+PACE Participation Guide  
+https://pace.gatech.edu/participation/
+
+PACE ICE Cluster Docs  
+https://pace.gatech.edu/ice-cluster/
+
+PACE Training Videos  
+https://mediaspace.gatech.edu/channel/PACE/283315292
+
+---
+
+# Future Improvements
+
+Potential improvements include:
+
+- Automated semester access renewal
+- Centralized volunteer access form
+- Automated reminder system before semester resets
+- Volunteer access dashboard
+
+---
+
+# Maintainers
+
+Abhinav Vemuri  
+CS 8803 Leadership in Computer Science  
+Georgia Tech
