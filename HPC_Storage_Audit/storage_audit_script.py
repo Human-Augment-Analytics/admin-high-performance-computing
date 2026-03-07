@@ -29,7 +29,6 @@ def run_text(cmd: list[str]) -> str:
 
 
 def run_du_bytes(target: Path) -> dict[str, int]:
-    # One traversal for target + immediate child folders only.
     cmd = ['du', '-B1', '-d', '1', str(target)]
     p = subprocess.run(cmd, capture_output=True, text=True)
     out = p.stdout
