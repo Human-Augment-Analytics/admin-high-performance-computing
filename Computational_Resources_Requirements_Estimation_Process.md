@@ -49,36 +49,11 @@ A simple dashboard will be created to visualize resource requirements across pro
 ### Workflow Flowchart
 
 ```mermaid
-flowchart LR
+flowchart TB
 
-subgraph FORM["Data Collection"]
-A[Research Team  
-fills Google Form]
-B[Responses stored  
-in Google Sheet]
-end
+A[Send Survey to Teams] --> B[Google Sheet Responses] --> C[Automation Script] --> D[Summary Generated]
 
-subgraph PROCESS["Automation / Aggregation"]
-C[Aggregation Script]
-D[Standardize values  
-CPU GPU RAM Storage]
-E[Compute totals]
-F[Generate summary table]
-end
-
-subgraph DASH["Visualization"]
-G[Dashboard view]
-H[Admin review]
-end
-
-subgraph HPC["HPC Planning"]
-I[Send request to PACE]
-J[HPC allocation]
-K[Projects run on HPC]
-end
-
-
-A --> B --> C --> D --> E --> F --> G --> H --> I --> J --> K
+D --> E[Dashboard Updated] --> F[Send Request to PACE] --> G[HPC Allocation]
 ```
 
 
