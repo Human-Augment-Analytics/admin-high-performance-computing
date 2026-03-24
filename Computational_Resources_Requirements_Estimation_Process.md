@@ -46,6 +46,41 @@ A simple dashboard will be created to visualize resource requirements across pro
 3) **Returning users** who need a refresh or standardized request format
 4) HAAG Admin Team
 
+### Workflow Flowchart
+
+```mermaid
+flowchart LR
+
+subgraph FORM["Data Collection"]
+A[Research Team  
+fills Google Form]
+B[Responses stored  
+in Google Sheet]
+end
+
+subgraph PROCESS["Automation / Aggregation"]
+C[Aggregation Script]
+D[Standardize values  
+CPU GPU RAM Storage]
+E[Compute totals]
+F[Generate summary table]
+end
+
+subgraph DASH["Visualization"]
+G[Dashboard view]
+H[Admin review]
+end
+
+subgraph HPC["HPC Planning"]
+I[Send request to PACE]
+J[HPC allocation]
+K[Projects run on HPC]
+end
+
+
+A --> B --> C --> D --> E --> F --> G --> H --> I --> J --> K
+```
+
 
 ## Deliverables  
 - `survey/`  
@@ -54,5 +89,3 @@ A simple dashboard will be created to visualize resource requirements across pro
   - Google Sheets script to automatically summarize survey responses and compute total resource demand
 - `dashboard/`  
   - Simple dashboard visualizing aggregate resource requirements (GPU, CPU, RAM, storage) across projects
-- `resource-summary/`
-  - Standardized resource requirement summary table for use in PACE planning and allocation requests
