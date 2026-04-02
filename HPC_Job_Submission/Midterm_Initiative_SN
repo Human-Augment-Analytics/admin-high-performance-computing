@@ -1,0 +1,151 @@
+Title:
+HAAG Storage & Semester-to-Semester Documentation Handoff Initiative
+Initiative Questions:
+Describe your initiative/ Procedure.
+This initiative standardizes project storage and documentation handoff from semester to semester using GitHub as the source of truth. The core procedure is a simple repository organization that separates “authoritative” documentation from work-in-progress and historical materials, reducing lost context and improving continuity across semesters.
+Procedure (current standard):
+
+GitHub is the single source of truth for documentation.
+Final documentation lives in final/.
+Draft documentation lives in drafts/.
+Archived (prior semester / outdated) documentation lives in archive/.
+A consistent structure and naming convention supports fast retrieval and clear version trust.
+
+Folder structure (defined):
+
+final/ — approved, current docs for ongoing and future semesters
+drafts/ — in-progress docs not yet validated
+archive/ — old versions and prior-semester snapshots (reference only)
+(Recommended additions for clarity: templates/, meeting-notes/, project-admin/)
+
+Explain the hypotheses/ KPIs you have measured at this time and what is left to be measured.
+Hypotheses:
+
+A clear GitHub folder standard (final/drafts/archive) reduces time spent searching for documentation and reduces confusion about “what’s current.”
+A consistent handoff structure improves continuity across semesters (less rework, fewer repeated decisions).
+New members onboard faster with a stable “Start here” path and predictable artifact locations.
+
+KPIs (planned):
+
+Time-to-find key docs (minutes) for a new/returning member
+Onboarding time to first productive contribution (hours/days)
+Handoff completeness rate (% of required artifacts present in final/)
+Number of clarification pings (e.g., “where is X?”) during onboarding
+Adoption rate (% of project artifacts stored according to the standard)
+
+Measured at this time:
+
+Not yet measured / not provided.
+
+Left to be measured:
+
+Baseline vs. post-standard comparison for time-to-find and onboarding
+End-of-semester completeness audit of final/
+Short stakeholder pulse feedback after the structure is used during delivery
+
+Explain your method for testing these hypotheses via flowcharts:
+Test method (flowchart-ready steps):
+Flowchart A — Discovery → Baseline
+
+Identify current documentation locations and formats
+Observe how documentation is found during normal work
+Record common failure points (missing docs, duplicates, unclear “latest”)
+Capture baseline: time-to-find + common clarification questions
+
+Flowchart B — Implement → Pilot
+
+Implement GitHub standard (final/, drafts/, archive/)
+Migrate or classify existing docs into correct folders
+Add minimal navigation (e.g., final/00_start-here/ landing doc)
+Run a pilot across one or more deliverable cycles
+
+Flowchart C — Measure → Iterate
+
+Re-test time-to-find + onboarding experience
+Check completeness of required artifacts in final/
+Collect feedback (friction points, confusion, resistance)
+Update structure/rules/templates based on results
+
+Explain how stakeholders are engaging with your initiative. Reflect on whether their engagement matches your expectations and what changes may be necessary given the behavior that you observed.
+Stakeholders (intended audience):
+
+New researchers joining projects midstream or next semester
+Current project members creating and updating documentation
+Experienced users needing quick reference with minimal overhead
+Administrative/system oversight contacts focused on access and sustainability
+
+Current engagement (status):
+
+Not provided yet (meetings, interviews, observations, or feedback themes not documented in this report draft).
+
+Expected engagement + likely adjustments:
+
+New members are expected to benefit immediately from clear “where things live.”
+Some experienced members may resist added process if documentation feels heavy.
+If adoption is uneven, adjustments may include:
+
+simplifying the “definition of final,”
+adding templates to reduce writing effort,
+assigning a rotating “documentation owner,”
+adding a short checklist gate before promotion into final/.
+
+
+
+What processes have you documented or begun documenting to ensure the sustainability of your initiative provide where you are hosting this procedure? What additional documentation do you plan to complete? Link documents here for review.
+Documented / started (current):
+
+GitHub “source of truth” rule
+Core repository organization: final/, drafts/, archive/
+Expectation that final deliverables live in final/ and older materials move to archive/
+
+Hosting location:
+
+GitHub repository (documentation stored directly in the repo)
+
+Additional documentation to complete (recommended minimum set):
+
+final/00_start-here/handoff_overview.md — what exists, what is unfinished, next steps
+final/00_start-here/navigation_map.md — repo map and “where to find X”
+final/01_procedures/storage-and-handoff-procedure.md — step-by-step procedure
+final/02_standards/naming-and-versioning.md — naming/versioning rules
+final/03_onboarding/new-member-onboarding.md — onboarding path + first tasks
+project-admin/decision-log.md — major decisions and rationale
+templates/ — handoff checklist template, SOP template, meeting notes template
+
+Link documents here for review (repo-relative paths):
+
+final/
+drafts/
+archive/
+
+How are you currently measuring progress toward your goals? What indicators of success or challenges have you identified so far?
+Current progress measurement (immediately actionable):
+
+Weekly check that new/updated docs are correctly classified into drafts/ vs final/
+Completeness checklist of required artifacts that must exist in final/
+Lightweight audit: ask a new/returning member to locate key docs; record time/friction
+
+Indicators of success (to confirm with data):
+
+Fewer “where is it?” clarification messages
+Faster onboarding and fewer repeated explanations
+final/ consistently contains the agreed minimum handoff package
+
+Challenges identified so far (structural):
+
+Preventing final/ from becoming a dumping ground without review
+Avoiding duplicates and conflicting “latest” docs
+Maintaining consistent usage across multiple contributors
+
+What obstacles or bottlenecks have you encountered in implementing your initiative? Which anticipated challenges have materialized, and what unexpected issues have arisen?
+Anticipated bottlenecks:
+
+Adoption friction (folder rules forgotten or inconsistently applied)
+Ownership ambiguity (no clear maintainer for documentation freshness)
+Time pressure (documentation deferred until end of semester)
+Scope creep (attempt to document everything vs. the “handoff minimum”)
+
+Encountered so far:
+
+Not provided yet (no documented examples in this draft).
+
