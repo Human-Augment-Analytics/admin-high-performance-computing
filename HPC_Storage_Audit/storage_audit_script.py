@@ -28,12 +28,24 @@ def run_text(cmd: list[str]) -> str:
     return p.stdout.strip() if p.stdout.strip() else p.stderr.strip()
 
 
+def run_du_human(target: Path) -> list[tuple[str, str]]:
+    cmd = ['du', '-h', '-d', '1', str(target)]
+    p = subprocess.run(cmd, capture_output=True, text=True)
+    rows: list[tuple[str, str]] = []
+    for line in p.stdout.splitlines():
+        parts = line.split('\t', 1)
+        if len(parts) != 2:
+            continue
+        size_str, path_str = parts
+        rows.append((size_str, path_str))
+    return rows
+
+
 def run_du_bytes(target: Path) -> dict[str, int]:
     cmd = ['du', '-B1', '-d', '1', str(target)]
     p = subprocess.run(cmd, capture_output=True, text=True)
-    out = p.stdout
     sizes: dict[str, int] = {}
-    for line in out.splitlines():
+    for line in p.stdout.splitlines():
         parts = line.split('\t', 1)
         if len(parts) != 2:
             continue
@@ -62,41 +74,43 @@ def main() -> int:
         return 1
 
     target_str = str(target)
+    now = datetime.now().astimezone()
+    report_name = f"storage_audit_report_{now.strftime('%Y%m%d')}.txt"
+    report_path = DEFAULT_TARGET / report_name
+    lines: list[str] = []
 
-    print(f'=== Storage Report for: {target} ===')
-    print(f"Generated at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S %Z')}")
-    print()
+    lines.append(f'=== Storage Report for: {target} ===')
+    lines.append(f"Generated at: {now.strftime('%Y-%m-%d %H:%M:%S %Z')}")
+    lines.append('')
 
-    print('[1] Filesystem capacity and current usage (where target is mounted)')
-    print(run_text(['df', '-h', target_str]))
-    print()
+    lines.append('[1] Filesystem capacity and current usage')
+    lines.append(run_text(['df', '-h', target_str]))
+    lines.append('')
 
-    sizes = run_du_bytes(target)
+    rows = run_du_human(target)
+    size_bytes = run_du_bytes(target)
 
-    print('[2] Size of target directory itself')
-    if target_str in sizes:
-        target_mtime = datetime.fromtimestamp(target.stat().st_mtime).strftime('%Y-%m-%d %H:%M:%S')
-        print(f"{human_size(sizes[target_str])}\t{target_mtime}\t{target_str}")
-    else:
-        print('Unavailable (could not read size).')
-    print()
-
-    print('[3] Top-level folders in target (size + last modified)')
-    top_rows: list[tuple[int, str, str]] = []
-    for path_str, size in sizes.items():
+    lines.append('[2] Top-level folders (size + last modified)')
+    top_rows: list[tuple[int, str, str, str]] = []
+    for size_str, path_str in rows:
         if depth_of(path_str, target_str) == 1:
             mtime = 'N/A'
             try:
                 mtime = datetime.fromtimestamp(Path(path_str).stat().st_mtime).strftime('%Y-%m-%d %H:%M:%S')
             except OSError:
                 pass
-            top_rows.append((size, mtime, path_str))
-    top_rows.sort(key=lambda x: x[0])
+            top_rows.append((size_bytes.get(path_str, -1), size_str, mtime, path_str))
+    top_rows.sort(key=lambda row: row[0], reverse=True)
     if top_rows:
-        for size, mtime, path_str in top_rows:
-            print(f"{human_size(size)}\t{mtime}\t{path_str}")
+        for _size_bytes, size_str, mtime, path_str in top_rows:
+            lines.append(f"{size_str}\t{mtime}\t{path_str}")
     else:
-        print('No top-level folders found or inaccessible.')
+        lines.append('No top-level folders found or inaccessible.')
+
+    report_text = '\n'.join(lines) + '\n'
+    report_path.write_text(report_text, encoding='utf-8')
+    print(report_text, end='')
+    print(f"Saved report to: {report_path}")
     return 0
 
 

@@ -1,0 +1,39 @@
+=== Storage Report for: /storage/ice-shared/cs8903onl ===
+Generated at: 2026-04-04 05:15:59 EDT
+
+[1] Filesystem capacity and current usage
+Filesystem                                 Size  Used Avail Use% Mounted on
+172.27.71.118:/pace-iceshared-0/cs8903onl  4.0T  3.9T  124G  97% /storage/ice-shared/cs8903onl
+
+[2] Top-level folders (size + last modified)
+1.1T	2025-12-13 23:13:17	/storage/ice-shared/cs8903onl/vector_quantization
+508G	2025-07-25 14:45:28	/storage/ice-shared/cs8903onl/bird_audio
+477G	2026-03-17 10:20:23	/storage/ice-shared/cs8903onl/mussmann-inaturalist
+474G	2025-10-15 09:26:40	/storage/ice-shared/cs8903onl/single_nuc_1
+389G	2026-04-03 11:17:11	/storage/ice-shared/cs8903onl/Mcquire-animal-detection
+261G	2026-03-03 06:58:51	/storage/ice-shared/cs8903onl/vectordb-retrieval
+239G	2026-03-26 12:52:17	/storage/ice-shared/cs8903onl/lw-batch-selection
+155G	2026-02-05 14:31:56	/storage/ice-shared/cs8903onl/kernel-datasets
+139G	2026-02-13 08:04:17	/storage/ice-shared/cs8903onl/LiDAR
+76G	2026-02-16 01:55:03	/storage/ice-shared/cs8903onl/shared
+66G	2026-03-10 15:29:25	/storage/ice-shared/cs8903onl/jzhuang48
+14G	2026-03-01 13:57:15	/storage/ice-shared/cs8903onl/lizard-classification
+7.5G	2026-03-12 10:13:57	/storage/ice-shared/cs8903onl/hourglass-data
+7.5G	2026-04-03 03:17:17	/storage/ice-shared/cs8903onl/mussmann-pfas
+3.4G	2024-10-11 16:27:13	/storage/ice-shared/cs8903onl/RW_Lizard_DLC
+3.3G	2025-09-03 20:53:02	/storage/ice-shared/cs8903onl/miami_fall_24_jpgs
+3.2G	2025-09-12 08:53:46	/storage/ice-shared/cs8903onl/syang693
+1.2G	2025-12-13 23:10:48	/storage/ice-shared/cs8903onl/datasets
+738M	2026-03-20 21:36:43	/storage/ice-shared/cs8903onl/Lizard_Toepads
+477M	2026-03-24 21:55:19	/storage/ice-shared/cs8903onl/Charleston_Train
+67M	2026-01-23 12:31:22	/storage/ice-shared/cs8903onl/miami_fall_24_upper_dataset_roboflow
+1.3M	2025-11-05 19:29:42	/storage/ice-shared/cs8903onl/tps_files
+4.0K	2026-04-04 05:15:38	/storage/ice-shared/cs8903onl/__pycache__
+1.5K	2025-09-26 14:52:50	/storage/ice-shared/cs8903onl/.idea
+0	2025-08-13 16:01:08	/storage/ice-shared/cs8903onl/.Trash-3208811
+0	2025-10-17 18:50:13	/storage/ice-shared/cs8903onl/.Trash-3398409
+0	2026-02-18 08:51:39	/storage/ice-shared/cs8903onl/.Trash-803386
+0	2025-06-09 18:48:16	/storage/ice-shared/cs8903onl/Datasets
+0	2025-10-09 21:25:16	/storage/ice-shared/cs8903onl/eiamarino
+0	2026-03-22 00:40:14	/storage/ice-shared/cs8903onl/n41
+0	2026-02-02 23:06:25	/storage/ice-shared/cs8903onl/odobon3
