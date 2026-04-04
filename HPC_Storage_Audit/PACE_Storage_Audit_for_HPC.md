@@ -46,7 +46,13 @@ Filesystem                                 Size  Used Avail Use% Mounted on
 ```
 ---
 
-## 3. Frequency of Audit
+## 3. Distribution of the Audit Report
+
+The report will be distributed to Director of HAAG (Bree Shi) & Head TA of HAAG (Charles Chark) on a bi-weekly base for regular review of the HPC Storage Utilization.
+
+---
+
+## 4. Frequency of Audit
 
 To ensure proper storage management, the audit will be performed **at the beginning of each semester**.
 
@@ -54,7 +60,7 @@ Additional audits may be conducted if storage utilization approaches critical ca
 
 --- 
 
-## 4. Ongoing Work
+## 5. Ongoing Work
 
 At present, there is no immediate need to perform backup or data cleanup, as more than **470 GB of storage capacity remains available**.
 
