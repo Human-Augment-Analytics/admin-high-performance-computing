@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+# Script Developed By:
+# Wai Lung Justin Yiu | Georgia Tech | HAAG Admin | OMSCS | CS 6999 Spring 2026
 #SBATCH --job-name=storage-audit-once
 #SBATCH --partition=ice-cpu
 #SBATCH --qos=coc-ice
