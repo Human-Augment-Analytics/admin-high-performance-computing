@@ -12,7 +12,7 @@
 #SBATCH --time=02:00:00
 #SBATCH --output=/storage/ice-shared/cs8903onl/storage_audit_once.%j.log
 #SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=wyiu31@gatech.edu
+#SBATCH --mail-user=first_person@gatech.edu,second_person@gatech.edu
 
 set -euo pipefail
 
