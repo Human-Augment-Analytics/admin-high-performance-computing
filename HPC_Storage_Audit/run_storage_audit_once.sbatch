@@ -1,6 +1,7 @@
 # Script Developed By:
 # Wai Lung Justin Yiu | Georgia Tech | HAAG Admin | OMSCS | CS 6999 Spring 2026
 
+#!/usr/bin/env bash
 #SBATCH --job-name=storage-audit-once
 #SBATCH --partition=ice-cpu
 #SBATCH --qos=coc-ice
@@ -10,13 +11,14 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=4G
 #SBATCH --time=02:00:00
-#SBATCH --output=/storage/ice-shared/cs8903onl/storage_audit_once.%j.log
+#SBATCH --output=/storage/ice-shared/cs8903onl/hpc-storage-audit/storage_audit_once.%j.log
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=first_person@gatech.edu,second_person@gatech.edu
 
 set -euo pipefail
 
-TARGET_DIR="/storage/ice-shared/cs8903onl"
+TARGET_DIR="/storage/ice-shared/cs8903onl/hpc-storage-audit"
+
 SCRIPT_PATH="${TARGET_DIR}/storage_audit_script.py"
 REPORT_PATH="${TARGET_DIR}/storage_audit_report_$(date +%Y%m%d).txt"
 EMAIL_TO="first_person@gatech.edu second_person@gatech.edu"

@@ -1,6 +1,7 @@
 # Script Developed By:
 # Wai Lung Justin Yiu | Georgia Tech | HAAG Admin | OMSCS | CS 6999 Spring 2026
 from __future__ import annotations
+
 import os
 import subprocess
 import sys
@@ -8,6 +9,7 @@ from datetime import datetime
 from pathlib import Path
 
 DEFAULT_TARGET = Path('/storage/ice-shared/cs8903onl')
+REPORT_PATH = Path('/storage/ice-shared/cs8903onl/hpc-storage-audit')
 
 
 def human_size(num_bytes: int) -> str:
@@ -75,7 +77,7 @@ def main() -> int:
     target_str = str(target)
     now = datetime.now().astimezone()
     report_name = f"storage_audit_report_{now.strftime('%Y%m%d')}.txt"
-    report_path = DEFAULT_TARGET / report_name
+    report_path = REPORT_PATH / report_name
     lines: list[str] = []
 
     lines.append(f'=== Storage Report for: {target} ===')
