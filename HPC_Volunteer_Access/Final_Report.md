@@ -170,37 +170,8 @@ Phases are ordered to deliver **value quickly** while building toward **batching
 
 ---
 
-## 6. Building the PowerPoint presentation
 
-Use this as a **slide outline**; adapt slide count to your course limits (often 10–15 slides).
-
-### Suggested narrative arc
-
-1. **Title** — Initiative name, your name, HAAG / GT, date.
-2. **Context** — ICE is instructional; enrollment-driven access breaks for volunteers after graduation or semester transitions (one diagram from the SOP).
-3. **Pain** — Informal process → missing info, delays, inconsistent adoption (reference operations_report / initiative_report bottlenecks).
-4. **Goal** — Standardize pipeline so HAAG researchers keep working with minimal friction.
-5. **Solution overview** — Four pillars: **Form**, **Batch**, **Remind**, **Own** (one slide with four icons or quadrants).
-6. **Mandatory form** — Screenshot mockup of required fields; explicitly tie to “cannot submit incomplete.”
-7. **Batching** — Timeline graphic: “Weeks 1–2: collect → one PACE package.”
-8. **Renewal pings** — Calendar / automation concept; **who owns renewals** (Coordinator + leads on roster).
-9. **Roles** — Simple RACI or table from Section 2 (trim for slides).
-10. **Before / after** — Reuse the two flowcharts from [initiative_report.md](./initiative_report.md) (informal vs standardized).
-11. **Roadmap** — Phases 1–4 on a horizontal timeline.
-12. **KPIs** — What you will measure to prove success.
-13. **Risks & mitigations** — Example: “PACE still slow” → batching reduces volume; “people skip form” → leads enforce ticket rule.
-14. **Ask / next steps** — What HAAG should approve (form owner, coordinator role, calendar dates).
-15. **Q&A / Resources** — Link to this repo folder and PACE URLs from the SOP.
-
-### Design tips
-
-- Keep **one idea per slide**; put extra detail in speaker notes.
-- Use **real HAAG anonymized examples** only if policy allows; otherwise use generic placeholders.
-- End on **accountability + automation**: humans own rosters; the system enforces completeness and timing.
-
----
-
-## 7. Summary
+## 6. Summary
 
 The **final solution** is not only documentation—it is **a mandatory form** (so steps cannot be skipped empty-handed), **semester batching** (so PACE admins face fewer round trips), **automated renewal pings** (so memory is not the primary system), and **named ownership** (so everyone knows who runs the calendar and who confirms rosters). Implement in phases, measure KPIs, and tell the story in the deck using the outline above.
 
